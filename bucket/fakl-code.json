@@ -1,0 +1,42 @@
+{
+    "version": "0.1.5",
+    "description": "IDE open source para desenvolvimento assistido por IA, um fork do VSCodium.",
+    "homepage": "https://github.com/FaKL-Code/FaKL-Code-IDE",
+    "license": "AGPL-3.0-only",
+    "notes": "O instalador do Windows não é assinado. Esta instalação é portátil: o auto-update da IDE só avisa; atualize com `scoop update fakl-code`.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/FaKL-Code/FaKL-Code-IDE/releases/download/v0.1.5/FaKL-Code-Windows-x64.exe",
+            "hash": "7db67a43b1704697734201f870a7ec9297abb06de4b5062beaf5f7fce87933b3"
+        }
+    },
+    "innosetup": true,
+    "bin": [
+        [
+            "FaKL-Code.exe",
+            "fakl-code"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "FaKL-Code.exe",
+            "FaKL-Code IDE"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/FaKL-Code/FaKL-Code-IDE/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/FaKL-Code/FaKL-Code-IDE/releases/download/v$version/FaKL-Code-Windows-x64.exe"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/FaKL-Code/FaKL-Code-IDE/releases/download/v$version/SHA256SUMS.txt",
+            "regex": "$sha256\\s+FaKL-Code-Windows-x64.exe"
+        }
+    }
+}
