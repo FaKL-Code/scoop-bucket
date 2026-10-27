@@ -1,13 +1,13 @@
 {
-    "version": "0.1.17",
+    "version": "0.1.18",
     "description": "IDE open source para desenvolvimento assistido por IA, um fork do VSCodium.",
     "homepage": "https://github.com/FaKL-Code/FaKL-Code-IDE",
     "license": "AGPL-3.0-only",
     "notes": "O instalador do Windows não é assinado. Esta instalação é portátil: o auto-update da IDE só avisa; atualize com `scoop update fakl-code`.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FaKL-Code/FaKL-Code-IDE/releases/download/v0.1.17/FaKL-Code-Windows-x64.exe",
-            "hash": "b3832f65106a9e84036743458484edde02d991c450040f97d971f3ade7a04957"
+            "url": "https://github.com/FaKL-Code/FaKL-Code-IDE/releases/download/v0.1.18/FaKL-Code-Windows-x64.exe",
+            "hash": "12229a7cdf5788e041086491e27a23001ff6ac026d4efb8391ff2d51c305b4ae"
         }
     },
     "innosetup": true,
